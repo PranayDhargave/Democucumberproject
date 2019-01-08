@@ -16,6 +16,7 @@ public class StepsImplemention
 	@Given("^I navigate to application \"([^\"]*)\"$")
 	public void i_navigate_to_application(String arg1) throws Throwable 
 	{
+		System.out.println("Demo Cucumber method");
 		System.setProperty("webdriver.chrome.driver","G:\\Software\\Selenium\\Updated\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get(arg1);
@@ -26,6 +27,7 @@ public class StepsImplemention
 	@When("^I enter username \"([^\"]*)\" and password \"([^\"]*)\"$")
 	public void i_enter_username_and_password(String arg1, String arg112) throws Throwable 
 	{
+		System.out.println("In Cucumber Method");
 	     driver.findElement(By.id("login-email-field")).sendKeys(arg1);
 	     driver.findElement(By.id("login-password-field_")).sendKeys(arg112);
 	}
