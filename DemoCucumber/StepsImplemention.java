@@ -16,7 +16,7 @@ public class StepsImplemention
 	@Given("^I navigate to application \"([^\"]*)\"$")
 	public void i_navigate_to_application(String arg1) throws Throwable 
 	{
-		System.out.println("Demo Cucumber method");
+		System.out.println("IN Demo Cucumber method");
 		System.setProperty("webdriver.chrome.driver","G:\\Software\\Selenium\\Updated\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get(arg1);
